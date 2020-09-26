@@ -23,12 +23,13 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  db.select("*")
-    .from(users)
-    .then((data) => {
-      console.log(data);
-      res.status(200).json(data);
-    });
+  res.statur(200).json("Everything is working!");
+  // db.select("*")
+  //   .from(users)
+  //   .then((data) => {
+  //     console.log(data);
+  //     res.status(200).json(data);
+  //   });
 });
 
 app.post("/signin", (req, res) => {
