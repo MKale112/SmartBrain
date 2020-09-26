@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.statur(200).json("Everything is working!");
+  res.status(200).json("Everything is working!");
   // db.select("*")
   //   .from(users)
   //   .then((data) => {
