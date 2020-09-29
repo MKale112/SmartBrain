@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.status(200).json("Everything is working!");
+  res.send("Everything is working!");
   // db.select("*")
   //   .from(users)
   //   .then((data) => {
